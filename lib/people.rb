@@ -3,9 +3,9 @@ require_relative 'person.rb'
 #
 class People
   attr_reader :people
-  def initialize
+  def initialize(people_csv_path)
     @people = []
-    CSV.foreach('data/people.csv',
+    CSV.foreach(people_csv_path,
                 headers: true,
                 header_converters: -> (h) { h.downcase.to_sym }) do |person_row|
       person = {}

@@ -3,9 +3,9 @@ require_relative 'city.rb'
 #
 class Cities
   attr_reader :cities
-  def initialize
+  def initialize(cities_csv_path)
     @cities = []
-    CSV.foreach('data/cities.csv',
+    CSV.foreach(cities_csv_path,
                 headers: true,
                 header_converters: -> (h) { h.downcase.to_sym }) do |city_row|
       city = {}

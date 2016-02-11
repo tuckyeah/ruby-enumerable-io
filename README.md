@@ -42,6 +42,8 @@ A file containing Comma Separated Values (CSV) is a simple and well supported fo
 
 We'll build a data loader for pets in `lib/pets.rb` using the Ruby standard library class [CSV](http://ruby-doc.org/stdlib-2.2.4/libdoc/csv/rdoc/CSV.html).
 
+We'll use a `lambda` - shorthand syntax `->([args]) {[code]}`, see [Proc](http://ruby-doc.org/core-2.2.4/Proc.html) - to ensure we use symbols as keys when loading data.  In Ruby, lambdas verify the number of arguments.
+
 ## Challenge
 
 Read two files at the same time using `bin/read_files.rb`.

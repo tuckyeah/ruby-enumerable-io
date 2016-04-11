@@ -1,5 +1,5 @@
 require_relative '../lib/people.rb'
 
-people = People.new('data/people.csv').people
+people = People.new.people
 
 p people.count

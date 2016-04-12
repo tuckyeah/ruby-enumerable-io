@@ -20,14 +20,14 @@ In Ruby, files, and all IO streams, are Enumerable.
 
 ## Files as lists
 
-Ruby's [File](http://ruby-doc.org/core-2.2.3/File.html) includes `Enumerable` so
+Ruby's [File](http://ruby-doc.org/core-2.3.0/File.html) includes `Enumerable` so
  we can use all of its methods to process files a character or a line (the
  default) at a time.
 
-Other enumerable classes related to working with files include [IO](http://ruby-doc.org/core-2.2.3/IO.html),
- and [Dir](http://ruby-doc.org/core-2.2.3/Dir.html).
+Other enumerable classes related to working with files include [IO](http://ruby-doc.org/core-2.3.0/IO.html),
+ and [Dir](http://ruby-doc.org/core-2.3.0/Dir.html).
 
-I used the Ruby Standard Library class [CSV](http://ruby-doc.org/stdlib-2.2.3/libdoc/csv/rdoc/CSV.html)
+I used the Ruby Standard Library class [CSV](http://ruby-doc.org/stdlib-2.3.0/libdoc/csv/rdoc/CSV.html)
 to load data for the `bin/*_array.rb` scripts.
 
 ### Code along - read a file
@@ -47,9 +47,9 @@ A file containing Comma Separated Values (CSV) is a simple and well supported
 ### Code along - CSV
 
 We'll build a data loader for pets in `lib/pets.rb` using the Ruby standard
- library class [CSV](http://ruby-doc.org/stdlib-2.2.4/libdoc/csv/rdoc/CSV.html).
+ library class [CSV](http://ruby-doc.org/stdlib-2.3.0/libdoc/csv/rdoc/CSV.html).
 
-We'll use a `lambda` - shorthand syntax `->([args]) {[code]}`, see [Proc](http://ruby-doc.org/core-2.2.4/Proc.html) -
+We'll use a `lambda` - shorthand syntax `->([args]) {[code]}`, see [Proc](http://ruby-doc.org/core-2.3.0/Proc.html) -
 to ensure we use symbols as keys when loading data.
 In Ruby, lambdas verify the number of arguments.
 
@@ -57,7 +57,7 @@ In Ruby, lambdas verify the number of arguments.
 
 Read two files at the same time using `bin/read_files.rb`.
 
-Look at [Enumerator](http://ruby-doc.org/core-2.2.3/Enumerator.html) which is
+Look at [Enumerator](http://ruby-doc.org/core-2.3.0/Enumerator.html) which is
  what gets returned when we call `each` on an open file without a block.
 
 We'll need to look briefly at exception handling as Enumerator relies on this

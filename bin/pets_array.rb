@@ -1,5 +1,5 @@
 require_relative '../lib/pets.rb'
 
-pets = Pets.new('data/pets.csv').pets
+pets = Pets.new.pets
 
-p pets.count
+p "There are #{pets.count} pets in this list."

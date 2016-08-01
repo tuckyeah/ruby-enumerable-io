@@ -50,7 +50,7 @@ DEPENDENCIES
   pry (~> 0.10)
   pry-byebug (~> 3.3)
   rake (~> 11.1)
-  rb-readline (~> 0.5.3)
+  rb-readline (~> 0.5)
   rspec (~> 3.4)
   rubocop (~> 0.39)
 

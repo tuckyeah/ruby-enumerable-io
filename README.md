@@ -52,9 +52,12 @@ A file containing Comma Separated Values (CSV) is a simple and well supported
 We'll build a data loader for pets in `lib/pets.rb` using the Ruby standard
  library class [CSV](http://ruby-doc.org/stdlib-2.3.0/libdoc/csv/rdoc/CSV.html).
 
-We'll use a `lambda` - shorthand syntax `->([args]) {[code]}`, see [Proc](http://ruby-doc.org/core-2.3.0/Proc.html) -
-to ensure we use symbols as keys when loading data.
-In Ruby, lambdas verify the number of arguments.
+We'll use a `lambda` - shorthand syntax `->([args]) {[code]}`, see
+[Proc](http://ruby-doc.org/core-2.3.0/Proc.html) - to ensure we use properly
+formatted symbols as keys when loading data.  In Ruby, lambdas verify the number
+of arguments.  Alternatively, we could pass a symbol from
+[HeaderConverters](http://ruby-doc.org/stdlib-2.3.0/libdoc/csv/rdoc/CSV.html#HeaderConverters)
+as the value for `:header_converters` in the options Hash.
 
 ## Challenge
 
@@ -63,8 +66,9 @@ Read two files at the same time using `bin/read_files.rb`.
 Look at [Enumerator](http://ruby-doc.org/core-2.3.0/Enumerator.html) which is
  what gets returned when we call `each` on an open file without a block.
 
-We'll need to look briefly at exception handling as Enumerator relies on this
- mechanism.
+We'll need to look briefly at [exception
+handling](http://ruby-doc.org/core-2.3.0/Exception.html) as Enumerator relies on
+this mechanism.
 
 ## [License](LICENSE)
 

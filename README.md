@@ -8,7 +8,7 @@ Fork, clone, branch (training), and bundle install.
 
 ## Objectives
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, developers should be able to:
 
 -   Iterate through a file one line at a time.
 -   Explain why you should only use the block form of `File.open`.

@@ -8,8 +8,9 @@ class Pets
   def initialize
     @pets = []
     CSV.foreach('data/pets.csv',
-                headers: true) do |pet|
-      @pets << Pet.new(pet)
+                headers: true,
+                header_converters: -> (h) { h.downcase.to_sym }) do |pet|
+      @pets << Pet.new(pet.to_hash) # headers are symbols, now we can make a hash
     end
   end
 end
